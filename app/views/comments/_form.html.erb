@@ -1,0 +1,9 @@
+<div class="send">
+    <%= form_with model: [@film, @comment] do |f| %>
+        <%= f.label "Имя пользователя" %>
+        <%= f.text_field :user_name %>
+        <%= f.label "Ваш отзыв" %>
+        <%= f.text_area :message %>
+        <%= f.submit "отправить" %>
+    <% end %>
+</div>

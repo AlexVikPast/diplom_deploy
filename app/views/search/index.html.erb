@@ -1,0 +1,16 @@
+<% if @films == "слишком короткий поиск" %>
+    <h3>слишком короткий поиск, воспользуйтесь формой поиска<h3>
+<% elsif @films.size == 0 %>
+    <h3>фильмы по-вашему запросу не найдены<h3>
+<% else %>
+    <% @films.each do |film| %>
+        <div class="info_film">
+            <% if film.poster.attached? %>
+                <%= image_tag film.poster %>
+            <% else %>
+            <% end %>
+            <%= film.description %>
+            <div class="button"><%= link_to "Смотреть", film %></div>
+        </div>
+    <% end %>
+<% end %>

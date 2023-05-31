@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <% if user_signed_in? %>
+        <h2>Здравствуйте</h2>
+        <input type="text" placeholder="<%= current_user.name %>" readonly/>
+        <input type="text" placeholder="<%= current_user.email %>" readonly/>
+        <%= link_to "выйти", users_path %>
+    <% else %>
+        <h2>Вход</h2>
+        <div class="lables_passreg_text">
+            <span><%= link_to "авторизация", auth_path %></span>
+        </div>
+        <div class="lables_passreg_text">
+            <span><%= link_to "регистрация", new_user_path %></span>
+        </div>
+    <% end %> 
+</div>
