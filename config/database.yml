@@ -48,5 +48,5 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV.fetch('DATABASE_URL') { 'postgres://krukdb_3g55_user:iTikH16ztDhWWb8vWXVAeW5ykK590Cck@dpg-chpn9uik728ivvos6uc0-a/krukdb_3g55' } >
+  url: <%= ENV['DATABASE_URL']
 
