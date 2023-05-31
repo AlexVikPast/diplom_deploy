@@ -379,7 +379,7 @@ td img {
 }
 
 .MyBar {
-	width: 5%
+	width: 5%;
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -388,7 +388,7 @@ td img {
 }
 
 .Click {
-	font-family: "Helvetica Neue", Helvetica, arial, sans-serif
+	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
 	font-size: 14px;
 	color: #24282f;
 	background-color: #fff;
