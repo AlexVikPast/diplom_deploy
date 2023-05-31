@@ -34,13 +34,13 @@
 # #   host: localhost
 
 default: &default
-  adapter: <%= ENV.fetch('DB_ADAPTER') { 'postgresql' } %>
+  adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: diplom_app_development # mobile_app_development mobile_app_production
+  database: mysite_development
 
 test:
   <<: *default
@@ -48,5 +48,6 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL']
+  url: <%= ENV['DATABASE_URL'] %>
+
 
