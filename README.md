@@ -31,3 +31,4 @@ Things you may want to cover:
 # rails db:seed
 # yarn add @rails/webpacker
 # bundle update webpacker
+# +
