@@ -34,7 +34,6 @@
 # #   host: localhost
 
 default: &default
-  # url: <%= ENV.fetch('DATABASE_URL', '5432') %>
   adapter: <%= ENV.fetch('DB_ADAPTER') { 'postgresql' } %>
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
